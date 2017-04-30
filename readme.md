@@ -1,0 +1,2 @@
+Just drop your icons in the icon-folder and run "gulp Iconfont". You may then copy the generated fonts out of the fonts diretory.
+New icons dropped into the icons folder will be renamed and automatically enlisted.
