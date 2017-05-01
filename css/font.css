@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "appointer-icon";
+  src: url('../fonts/appointer-icon.eot');
+  src: url('../fonts/appointer-icon.eot?#iefix') format('eot'),
+    url('../fonts/appointer-icon.woff2') format('woff2'),
+    url('../fonts/appointer-icon.woff') format('woff'),
+    url('../fonts/appointer-icon.ttf') format('truetype'),
+    url('../fonts/appointer-icon.svg#appointer-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  display: inline-block;
+  font-family: "appointer-icon";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.icon-2x { font-size: 2em; }
+.icon-3x { font-size: 3em; }
+.icon-4x { font-size: 4em; }
+.icon-5x { font-size: 5em; }
+
+
+.icon-icons_caret::before { content: "\uea01"; }
+
+.icon-icons_checkmark::before { content: "\uea02"; }
+
+.icon-icons_dot::before { content: "\uea03"; }
+
+.icon-icons_flag::before { content: "\uea04"; }
+
+.icon-icons_pen::before { content: "\uea05"; }
+
+.icon-icons_plus::before { content: "\uea06"; }
+
+.icon-icons_squeeze::before { content: "\uea07"; }
+
+.icon-icons_toolbar::before { content: "\uea08"; }
+
+.icon-icons_fasdlag::before { content: "\uea09"; }
