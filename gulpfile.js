@@ -14,6 +14,8 @@ var config = {
     cssDestPath: 'css/'
 };
 
+gulp.task('default', ['iconfont']);
+
 gulp.task('iconfont', function(done) {
 
     var iconStream = gulp.src(config.iconSourcePath)
