@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.icon:before {
+.icon {
   display: inline-block;
   font-family: "appointer-icon";
   font-style: normal;
