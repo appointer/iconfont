@@ -21,18 +21,16 @@
 }
 
 .<%= className %>-lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
+  font-size: <%= 4 / 3 %>em;
+  line-height: <%= 3 / 4 %>em;
   vertical-align: -15%;
 }
+
 .<%= className %>-2x { font-size: 2em; }
 .<%= className %>-3x { font-size: 3em; }
 .<%= className %>-4x { font-size: 4em; }
 .<%= className %>-5x { font-size: 5em; }
-.<%= className %>-fw {
-  width: 1.2857142857142858em;
-  text-align: center;
-}
 
-<% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>::before { content: "\<%= glyph.unicode.toString(16) %>" }
+<% _.each(glyphs, function(glyph) { %>
+.<%= className %>-<%= glyph.name %>::before { content: "<%= glyph.unicode %>"; }
 <% }); %>
