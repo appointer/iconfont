@@ -17,7 +17,7 @@ var config = {
 
 const escapeUnicodes = function (glyphs) {
     return _.map(glyphs, function (glyph) {
-        glyph.unicode = _.map(glyph.unicode, function (unicode) {
+        glyph.escapedUnicode = _.map(glyph.unicode, function (unicode) {
             return toUnicodeSequence(unicode);
         });
         return glyph;

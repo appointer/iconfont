@@ -32,20 +32,18 @@
 .icon-5x { font-size: 5em; }
 
 
-.icon-icons_caret::before { content: "\uea01"; }
+.icon-caret::before { content: ""; }
 
-.icon-icons_checkmark::before { content: "\uea02"; }
+.icon-checkmark::before { content: ""; }
 
-.icon-icons_dot::before { content: "\uea03"; }
+.icon-dot::before { content: ""; }
 
-.icon-icons_flag::before { content: "\uea04"; }
+.icon-flag::before { content: ""; }
 
-.icon-icons_pen::before { content: "\uea05"; }
+.icon-pen::before { content: ""; }
 
-.icon-icons_plus::before { content: "\uea06"; }
+.icon-plus::before { content: ""; }
 
-.icon-icons_squeeze::before { content: "\uea07"; }
+.icon-squeeze::before { content: ""; }
 
-.icon-icons_toolbar::before { content: "\uea08"; }
-
-.icon-icons_fasdlag::before { content: "\uea09"; }
+.icon-toolbar::before { content: ""; }
