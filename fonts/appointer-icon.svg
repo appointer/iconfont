@@ -31,6 +31,9 @@
     <glyph glyph-name="toolbar"
       unicode="&#xEA08;"
       horiz-adv-x="50" d=" M46.45 0.5H3.45A2.5 2.5 0 1 0 3.45 5.5H46.45A2.5 2.5 0 1 0 46.45 0.5z" />
+    <glyph glyph-name="minus"
+      unicode="&#xEA09;"
+      horiz-adv-x="50" d=" M32 22.5H18A2.5 2.5 0 0 0 18 27.5H32A2.5 2.5 0 0 0 32 22.5z" />
   </font>
 </defs>
 </svg>
