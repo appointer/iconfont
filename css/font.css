@@ -50,8 +50,8 @@
 
 .icon-heart::before { content: ""; }
 
+.icon-rocket::before { content: ""; }
+
 .icon-close::before { content: ""; }
 
 .icon-plus::before { content: ""; }
-
-.icon-rocket::before { content: ""; }
