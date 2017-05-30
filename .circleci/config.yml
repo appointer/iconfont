@@ -1,22 +1,20 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/iconfont
+    working_directory: /home/circleci/iconfont
     docker:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run:
-          name: Update npm to latest version
-          command: 'sudo npm install -g npm@latest'
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
-          name: Install npm dependencies
-          command: npm install
+          name: Install node dependencies via yarn
+          command: yarn install
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
+            - "~/.yarn-cache"
             - .node_modules
       - store_artifacts:
           path: artifacts
