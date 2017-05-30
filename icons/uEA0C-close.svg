@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-width:7.01px;}</style></defs><title>icons</title><g id="close"><g id="Point-Prozess"><g id="Desktop-HD---alpha-modal"><g id="x-out-w_-shadow" data-name="x-out-w/-shadow"><g id="Group-5"><path id="Path-2" class="cls-1" d="M11,11,39,39"/><path id="Path-2-Copy" class="cls-1" d="M39,11,11,39"/></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<title>icons</title>
+<g id="close">
+	<g id="Point-Prozess">
+		<g id="Desktop-HD---alpha-modal">
+			<g id="x-out-w_-shadow">
+				<g id="Group-5">
+					<g id="Path-2">
+						<path d="M37.5,40.7c-0.8,0-1.6-0.3-2.2-0.9L10.2,14.7c-1.2-1.2-1.2-3.2,0-4.4c1.2-1.2,3.2-1.2,4.4,0l25.1,25.1
+							c1.2,1.2,1.2,3.2,0,4.4C39.1,40.4,38.3,40.7,37.5,40.7z"/>
+					</g>
+					<g id="Path-2-Copy">
+						<path d="M12.4,40.7c-0.8,0-1.6-0.3-2.2-0.9c-1.2-1.2-1.2-3.2,0-4.4l25.1-25.1c1.2-1.2,3.2-1.2,4.4,0c1.2,1.2,1.2,3.2,0,4.4
+							L14.6,39.8C14,40.4,13.2,40.7,12.4,40.7z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
