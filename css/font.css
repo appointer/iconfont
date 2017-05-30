@@ -42,6 +42,8 @@
 
 .icon-pen::before { content: ""; }
 
+.icon-rocket::before { content: ""; }
+
 .icon-squeeze::before { content: ""; }
 
 .icon-toolbar::before { content: ""; }
@@ -53,5 +55,3 @@
 .icon-close::before { content: ""; }
 
 .icon-plus::before { content: ""; }
-
-.icon-rocket::before { content: ""; }

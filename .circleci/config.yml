@@ -11,6 +11,12 @@ jobs:
       - run:
           name: Install node dependencies via yarn
           command: yarn install
+      - run:
+          name: Install gulp task runner
+          command: sudo yarn global add gulp-cli
+      - run:
+          name: Run font build process
+          command: gulp
       - save_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
