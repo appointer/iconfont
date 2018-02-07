@@ -52,8 +52,10 @@
 
 .icon-heart::before { content: ""; }
 
+.icon-bell::before { content: ""; }
+
 .icon-close::before { content: ""; }
 
 .icon-plus::before { content: ""; }
 
-.icon-bell::before { content: ""; }
+.icon-arrow-right::before { content: ""; }
