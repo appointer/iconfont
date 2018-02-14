@@ -1,11 +1,14 @@
+$sass-asset-helper: false !default;
+$icon-font-path: if($sass-asset-helper, "fonts/", "<%= fontPath %>") !default;
+
 @font-face {
   font-family: "<%= fontName %>";
-  src: url('<%= fontPath %><%= fontName %>.eot');
-  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
-    url('<%= fontPath %><%= fontName %>.woff2') format('woff2'),
-    url('<%= fontPath %><%= fontName %>.woff') format('woff'),
-    url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
-    url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+  src: url('#{$icon-font-path}<%= fontName %>.eot');
+  src: url('#{$icon-font-path}<%= fontName %>.eot?#iefix') format('eot'),
+    url('#{$icon-font-path}<%= fontName %>.woff2') format('woff2'),
+    url('#{$icon-font-path}<%= fontName %>.woff') format('woff'),
+    url('#{$icon-font-path}<%= fontName %>.ttf') format('truetype'),
+    url('#{$icon-font-path}<%= fontName %>.svg#<%= fontName %>') format('svg');
   font-weight: normal;
   font-style: normal;
 }

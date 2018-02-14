@@ -4,15 +4,16 @@ var gulp = require('gulp');
 var consolidate = require('gulp-consolidate');
 var async = require('async');
 var _ = require('lodash');
+var sass = require('gulp-sass');
 
 var config = {
     iconSourcePath: ['icons/*.svg'],
     fontName: 'appointer-icon',
     relativeCssFontPath: '../fonts/',
     className: 'icon',
-    cssTemplatePath: 'templates/font.css',
+    scssTemplatePath: 'templates/font.scss',
     fontDestPath: 'fonts/',
-    cssDestPath: 'css/'
+    scssDestPath: 'sass/'
 };
 
 const escapeUnicodes = function (glyphs) {
@@ -33,7 +34,7 @@ const toUnicodeSequence = function (str) {
     return str;
 };
 
-gulp.task('default', ['iconfont']);
+gulp.task('default', ['iconfont','sass']);
 
 gulp.task('iconfont', function (done) {
 
@@ -48,14 +49,14 @@ gulp.task('iconfont', function (done) {
     async.parallel([
         function (cb) {
             iconStream.on('glyphs', function (glyphs, options) {
-                gulp.src(config.cssTemplatePath)
+                gulp.src(config.scssTemplatePath)
                     .pipe(consolidate('lodash', {
                         glyphs: escapeUnicodes(glyphs),
                         fontName: config.fontName,
                         fontPath: config.relativeCssFontPath,
                         className: config.className
                     }))
-                    .pipe(gulp.dest(config.cssDestPath))
+                    .pipe(gulp.dest(config.scssDestPath))
                     .on('finish', cb);
             });
         },
@@ -65,4 +66,10 @@ gulp.task('iconfont', function (done) {
                 .on('finish', cb);
         }
     ], done);
+});
+
+gulp.task('sass', function () {
+    return gulp.src('./sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
 });
