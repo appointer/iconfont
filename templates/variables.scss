@@ -1,0 +1,13 @@
+$sass-asset-helper: false !default;
+
+$icon-font-path: if($sass-asset-helper, "fonts/", "../fonts/") !default;
+$icon-font-family: "appointer-icon";
+
+$icons: ();
+$icons: map-merge((
+
+<% _.each(glyphs, function(glyph) { %>
+  "<%= glyph.name %>" : "<%= glyph.unicode %>",
+<% }); %>
+
+), $icons);

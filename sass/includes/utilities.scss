@@ -1,0 +1,8 @@
+@mixin icon($key) {
+  font-family: $icon-font-family;
+  content: map_get($icons, $key);
+}
+
+@function icon($key) {
+  @return map-get($icons, $key);
+}

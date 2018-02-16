@@ -11,9 +11,9 @@ var config = {
     fontName: 'appointer-icon',
     relativeCssFontPath: '../fonts/',
     className: 'icon',
-    scssTemplatePath: 'templates/font.scss',
+    scssTemplatePath: 'templates/**/*.scss',
     fontDestPath: 'fonts/',
-    scssDestPath: 'sass/'
+    scssDestPath: 'sass/includes/'
 };
 
 const escapeUnicodes = function (glyphs) {
@@ -69,7 +69,7 @@ gulp.task('iconfont', function (done) {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });

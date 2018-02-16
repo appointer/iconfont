@@ -1,0 +1,37 @@
+$sass-asset-helper: false !default;
+
+$icon-font-path: if($sass-asset-helper, "fonts/", "../fonts/") !default;
+$icon-font-family: "appointer-icon";
+
+$icons: ();
+$icons: map-merge((
+
+
+  "caret" : "",
+
+  "checkmark" : "",
+
+  "dot" : "",
+
+  "flag" : "",
+
+  "pen" : "",
+
+  "rocket" : "",
+
+  "toolbar" : "",
+
+  "minus" : "",
+
+  "heart" : "",
+
+  "bell" : "",
+
+  "close" : "",
+
+  "plus" : "",
+
+  "arrow-right" : "",
+
+
+), $icons);

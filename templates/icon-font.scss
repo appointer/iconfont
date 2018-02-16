@@ -1,8 +1,5 @@
-$sass-asset-helper: false !default;
-$icon-font-path: if($sass-asset-helper, "fonts/", "<%= fontPath %>") !default;
-
 @font-face {
-  font-family: "<%= fontName %>";
+  font-family: $icon-font-family;
   src: url('#{$icon-font-path}<%= fontName %>.eot');
   src: url('#{$icon-font-path}<%= fontName %>.eot?#iefix') format('eot'),
     url('#{$icon-font-path}<%= fontName %>.woff2') format('woff2'),
@@ -15,7 +12,7 @@ $icon-font-path: if($sass-asset-helper, "fonts/", "<%= fontPath %>") !default;
 
 .<%= className %> {
   display: inline-block;
-  font-family: "<%= fontName %>";
+  font-family: $icon-font-family;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
