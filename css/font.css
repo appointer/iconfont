@@ -50,9 +50,6 @@
 .icon-rocket::before {
   content: ""; }
 
-.icon-arrow-right::before {
-  content: ""; }
-
 .icon-toolbar::before {
   content: ""; }
 
@@ -70,3 +67,6 @@
 
 .icon-plus::before {
   content: ""; }
+
+.icon-arrow-right::before {
+  content: ""; }
